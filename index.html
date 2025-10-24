@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan - Website Anuar</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e6d6a6.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="https://png.pngtree.com/png-vector/20200312/ourmid/pngtree-modern-flat-design-concept-of-ui-ux-design-with-characters-and-png-image_2157890.jpg" alt="Logo" width="40" height="40" class="me-2">
+        Hura Anuar
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="layanan.html">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="portofolio.html">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="staff.html">Staff</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak Kami</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel (Video + Slide Gambar) -->
+  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1: Video -->
+      <div class="carousel-item active">
+        <div class="video-container">
+          <video autoplay muted loop playsinline class="w-100">
+            <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="fw-bold text-light">Selamat Datang di Website Kami</h2>
+            <p class="lead">Percayakan Kepada HURA Untuk Hasil Terbaik!</p>
+            <a href="#paket-layanan" class="btn btn-danger btn-lg">Cek Layanan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20230625/pngtree-conceptual-design-for-3d-application-development-and-ui-ux-image_3659741.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fw-bold text-light">Kami Siap Mewujudkan Ide Anda!</h2>
+          <p class="lead">Solusi digital terbaik untuk bisnis Anda.</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="https://bluebik.com/wp-content/uploads/2024/09/Insights004-Hero-Banner.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fw-bold text-light">Tim Profesional dan Berpengalaman</h2>
+          <p class="lead">Kami hadir untuk memberikan hasil terbaik.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontrol -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Paket Layanan -->
+  <section id="paket-layanan" class="container py-5 mt-5">
+    <h2 class="text-center mb-4 text-primary fw-bold">Paket Layanan Kami</h2>
+    <div class="row text-center">
+      <!-- Layanan 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg h-100">
+          <div class="card-header bg-dark text-white fw-bold">SERVICE</div>
+          <div class="card-body">
+            <h3 class="display-6 fw-bold text-primary">2.000 <small class="text-muted">/jt</small></h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>500 MB Disk Space</li>
+              <li>Email Accounts</li>
+              <li>Desain SEO Friendly</li>
+              <li>Live Chat Support</li>
+              <li>1 Tahun Kontrak</li>
+            </ul>
+            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#formModal">Selengkapnya</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layanan 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg h-100">
+          <div class="card-header bg-primary text-white fw-bold">DESAIN</div>
+          <div class="card-body">
+            <h3 class="display-6 fw-bold text-primary">4.000 <small class="text-muted">/jt</small></h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>1 GB Disk Space</li>
+              <li>Email Accounts</li>
+              <li>Desain Profesional</li>
+              <li>Live Chat Support</li>
+              <li>1 Tahun Kontrak</li>
+            </ul>
+            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#formModal">Selengkapnya</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layanan 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg h-100">
+          <div class="card-header bg-info text-white fw-bold">KONSULTASI</div>
+          <div class="card-body">
+            <h3 class="display-6 fw-bold text-primary">5.000 <small class="text-muted">/jt</small></h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>2 GB Disk Space</li>
+              <li>Full Support 24/7</li>
+              <li>Strategi Bisnis Digital</li>
+              <li>Live Chat Support</li>
+              <li>1 Tahun Kontrak</li>
+            </ul>
+            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#formModal">Selengkapnya</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Formulir Pemesanan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3"><label class="form-label">Nama Lengkap</label><input type="text" class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Nomor HP / WhatsApp</label><input type="text" class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Email</label><input type="email" class="form-control"></div>
+            <div class="mb-3">
+              <label class="form-label">Pilih Layanan</label>
+              <select class="form-select">
+                <option>Service</option><option>Desain</option><option>Konsultasi</option>
+              </select>
+            </div>
+            <div class="mb-3"><label class="form-label">Catatan Tambahan</label><textarea class="form-control" rows="3"></textarea></div>
+            <button type="submit" class="btn btn-primary w-100">Kirim Permintaan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-center text-white py-3 mt-5">
+    <small>© Hura Anuar - Web Desain Ono Niha, Indonesia</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
