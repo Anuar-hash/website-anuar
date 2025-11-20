@@ -1,0 +1,155 @@
+
+/* Background halaman login */
+.login-page {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1500&q=80') 
+  no-repeat center center/cover;
+
+  backdrop-filter: blur(1px);
+}
+
+/* Box Login */
+.login-box {
+  width: 350px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Input */
+.form-control {
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* Ikon toggle password */
+.toggle-pass i {
+  font-size: 18px;
+}
+
+/* Kartu efek */
+.card {
+  border: none;
+}
+
+
+
+/* ====== GLOBAL ====== */
+body {
+  background: #f3f4f7;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #292929;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .title-app {
+  font-size: 18px;
+  color: #fff;
+}
+
+.sidebar .nav-link {
+  color: #dcdcdc;
+  margin: 5px 0;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background: #3a3a3a;
+  color: #fff;
+}
+
+.sidebar-user {
+  background: #1f1f1f;
+  padding: 15px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+}
+
+/* ====== HEADER ====== */
+.header-top {
+  height: 60px;
+  width: calc(100% - 260px);
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 260px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.header-top .user {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ====== CONTENT ====== */
+.content {
+  margin-left: 260px;
+  padding: 90px 30px 30px;
+}
+
+/* ====== HERO SECTION ====== */
+.dashboard-hero {
+  background: #fff;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.clock-wrapper img {
+  filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.25));
+}
+
+/* ====== CARD CUSTOM ====== */
+.card-custom {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ====== MOBILE RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 200px;
+  }
+  .header-top {
+      width: calc(100% - 200px);
+      left: 200px;
+  }
+  .content {
+      margin-left: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+      display: none;
+  }
+  .header-top {
+      width: 100%;
+      left: 0;
+  }
+  .content {
+      margin-left: 0;
+      padding-top: 80px;
+  }
+}
