@@ -1,3 +1,36 @@
+/* Full height untuk login-page */
+.login-page {
+  min-height: 100vh; /* agar selalu full screen */
+  background: #f8f9fa; /* warna background lembut */
+  padding: 15px;
+}
+
+/* Login box responsif */
+.login-box {
+  width: 100%;
+  max-width: 400px; /* ukuran maksimal di desktop */
+  border-radius: 10px;
+}
+
+/* Sesuaikan ikon input di mobile */
+.input-group-text {
+  background-color: #e9ecef;
+}
+
+/* Responsive typography */
+h4 {
+  font-size: 1.5rem; /* default */
+}
+
+@media (max-width: 576px) { /* layar kecil */
+  h4 {
+    font-size: 1.2rem;
+  }
+  .login-box {
+    padding: 20px;
+  }
+}
+
 
 /* Background halaman login */
 .login-page {
